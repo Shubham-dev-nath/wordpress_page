@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>WordPress Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+ <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <style>
+ 
+   span {
+    display: inline-block;
+    width: 300px;
+    height: 150px;
+    margin: 50px;
+    
+  }
+  
+  .heading{
+    text-align: center;
+   
+  }
+  a:link {
+  text-decoration: none;
+  
+}
+a:visited {
+  color: white;
+}
+  ion-icon {
+  font-size: 24px;
+  color: white;
+}
+  
+  * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+img {
+  max-width: 100%;
+}
+.carousel-container {
+  width: 1100px;
+  margin: 50px auto;
+  position: relative;
+  border-left-width: 4px;
+  border-left-style: solid;
+  border-left-color: #aaa;
+}
+@media (max-width: 768px) {
+  .carousel-container {
+    width: 95%;
+  }
+}
+.inner-carousel {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+.track {
+  display: inline-flex;
+  height: 100%;
+  transition: transform 0.2s ease-in-out;
+}
+.card-container {
+  width: 275px;
+  height: 400px;
+  flex-shrink: 0;
+  padding-right: 10px;
+}
+@media (max-width: 768px) {
+  .card-container {
+    width: 184px;
+  }
+}
+.card {
+  width: 100%;
+  height: 100%;
+  background-position: center bottom;
+  background-size: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+.card1 {
+  background-image: url("https://cdn-babnh.nitrocdn.com/yTCeykVJyIHAxPkMUOhbcsQPyphGzkvj/assets/static/optimized/rev-91170b1/wp-content/uploads/2020/05/wordpress-image-size-example-1024x576.png");
+}
+.card2 {
+  background-image: url("https://static.nc-img.com/uxteam/lc.simple-pages/easywp-content/img/seo-what-is-wordpress-1.d3763957.png");
+}
+.card3 {
+  background-image: url("https://iotvnaw69daj.i.optimole.com/cb:n2y9~6666f/w:1450/h:740/q:mauto/f:avif/https://www.codeinwp.com/wp-content/uploads/2021/10/What-is-WordPress.jpeg");
+}
+.card4 {
+  background-image: url("https://www.freelancetoindia.com/wp-content/uploads/2019/01/WordPress-Development.jpg");
+}
+.card5 {
+  background-image: url("https://cdn.pixabay.com/photo/2014/12/08/17/52/mare-561221_960_720.jpg");
+}
+.card6 {
+  background-image: url("https://cdn.pixabay.com/photo/2017/02/08/17/24/butterfly-2049567_960_720.jpg");
+}
+.card7 {
+  background-image: url("https://cdn.pixabay.com/photo/2017/11/30/22/00/pumpkin-2989569_960_720.jpg");
+}
+.card8 {
+  background-image: url("https://cdn.pixabay.com/photo/2016/07/24/22/25/woman-1539416_960_720.jpg");
+}
+.card9 {
+  background-image: url("https://cdn.pixabay.com/photo/2017/11/15/09/28/music-player-2951399_960_720.jpg");
+}
+.card10 {
+  background-image: url("https://cdn.pixabay.com/photo/2018/02/23/04/38/laptop-3174729_960_720.jpg");
+}
+.card11 {
+  background-image: url("https://cdn.pixabay.com/photo/2016/03/09/09/30/woman-1245817_960_720.jpg");
+}
+
+.card12 {
+  background-image: url("https://cdn.pixabay.com/photo/2016/11/08/05/31/adorable-1807544_960_720.jpg");
+}
+
+.nav button {
+  position: absolute;
+  top: 50%;
+  transform: translatey(-50%);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  outline: none;
+  border: 1px solid #000;
+  cursor: pointer;
+}
+.nav .prev {
+  left: -30px;
+  display: none;
+}
+.nav .prev.show {
+  display: block;
+}
+.nav .next {
+  right: -30px;
+}
+.nav .next.hide {
+  display: none;
+}
+    
+  </style>
+</head>
+
+<body style="background-color: black;">
+   <div class="container pt-5 text-white">
+    <nav class="navbar navbar-expand-sm  navbar-dark">
+        <div class="container-fluid ">
+          <a class="navbar-brand" href="#">Logo Zyntech</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Company</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>  
+              <li class="nav-item">
+                <a class="nav-link" href="#">Rewards</a>
+              </li>  
+              <li class="nav-item">
+                <a class="nav-link" href="#">Partners</a>
+              </li>  
+              <li class="nav-item">
+                <a class="nav-link" href="#">Resources</a>
+              </li>  
+            </ul>
+          </div>
+          <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sign In</a>
+              </li>
+              <button type="button" class="btn btn-danger">Start With Us</button>
+              </ul>
+              </div>
+
+             
+        </div>
+      </nav>
+     </div>
+
+     <div class="container pt-5 text-white ">
+      <div class="row">
+        <div class="col-lg-6">
+      <h2 >WORDPRESS DEVELOPMENT  SERVICES</h2>
+        <h4>GROW YOUR BRAND WITH ZYNTECH TODAY</h4>
+            <p>Have a question,Not sure where to Start?</p>
+            <button type="button" class="btn btn-danger">Pick a plan</button>
+        </div>
+        <div class="col-lg-6">
+            <img src="https://5.imimg.com/data5/SELLER/Default/2022/10/LE/ZN/XA/77238152/wordpress-development-services-500x500.webp" class="mx-auto d-block" style="width:50%"> 
+         </div>
+
+            <div class="container-fluid text-white">
+              <div class="heading"> <h4>BEST WORDPRESS DEVELOPMENT AGENCY</h4><br>
+            <h6><u class="underline">Wordpress Devlopment Services</u></h6></div>
+            <p>Zyntech is a leading WORDPRESS development company providing cost-effective custom WordPress solutions for all business needs.We Develop highly scalable, features- rich, and robust WordPress
+              Websites to improve digital presence to improve digital presense. Our custom WordPress development serviices include API integration and customization, plugin development,theme development,
+              maintenance and support, and much more.
+              At Zyntech we offer top-class services to cater to every kind of business irrespective of sizes-small,medium and large.
+            </p>
+
+            <div class="heading"><h6>BEST WORDPRESS DEVELOPMENT AGENCY</h6></div> 
+             <h7>Why choose WordPress Development Services?</h7>
+             <p>WordPress is one of the most renowned,user-friendly,and fastest-growing content management systems(CMS)empowering 34% of websites on the internet.</p><br>
+
+             <p>Zyntech is the #1 WordPress website development comapany with a vision of building customized solutions that are scalable and secure.We have more than 10+ years of WordPress development experience
+              and a team of highly experienced WordPress experts who are offering functional,flexible,cost-effective, and fully responsive web design and development solutions to business globally.Our highly WordPress
+            web developers are not just creating a website they are helping you and your brand to create a seamless digital experience for your vluble customer! </p>
+
+            <div class="row">
+              <div class="col p-3 sm-primary text-white">45+
+                <br> WordPress developers
+              </div>
+              <div class="col p-3 sm-dark text-white">20+
+                <br>Countries with happy clients
+              </div>
+              <div class="col p-3 sm-primary text-white">100+
+                <br>WordPress projects completed
+              </div>
+            </div><br>
+
+           <div class="features">
+            <div class="heading"> <h6>OUR FEATURES RICH COMPREHENSIVE SERVICES</h6></div><br>
+            <div class="row">
+              <div class="col-sm-6">
+                <ul>
+                  <li>Fully-Responsive Websites</li>
+                  <li> Hassle-fress Wordpress Upgrading</li>
+                  <li>Complete Security</li>
+                </ul>   
+            </div>
+
+              <div class="col-sm-6"><ul>
+                <li>At par Mainteneance Charge</li>
+                <li>All types Of Migrations</li>
+                <li>Progressive Web Apps</li>
+              </ul>  
+            </div>
+            </div><br>
+           
+                
+           <div class="row">
+            <div class="heading"><div class="col"><h6>Whu Should You Choose Wordpress?</h6></div><br>
+            <p>With over 40% of the website market share, Wordpress brings many website development services.Although it's one of the
+              most powerful content management systems, Wordpresss is also the simplest, making your development experience very pleasing.You can benefit from countless plugins and add-on featuresthat make WordPress
+              website management easy.
+              At Zyntech, we offer Wordpress development services at affordable prices.
+            </p>
+          </div>
+          </div><br>
+           
+          <div class="row">
+            <div class="col">
+              <div class="heading"> <h6> Get The Best Wordpress Web Development Services</h6></div><br>
+              Zyntech is one of the best custom WordPress Development companies and has expertise in Wordpress design and development services of various business worldwide.Our custom Wordpress development
+              services help companies control business function better.You"ll get more then just a simple website with us by your side. We help curate high performing digital experiences that add the value to your business
+              with our WordPress development solutions.We firmly believe that every interaction counts, so we bring our expertise and passion to the table of our benefit.
+            </div>
+            </div><br></br>
+             
+            <div class="container mt-3">
+              <div class="heading"><button type="button" class="btn btn-danger">Learn More</button></div><br>
+              <div class="heading"><h3>Get more done with Zyntech</h3>
+              <p>Starting a project should be celebration, not a nightmare.</p></div>  
+              <div class="row">
+                <div class="col"> <div class="heading"><span class="border border-1"><ion-icon name="eye-off-outline"></ion-icon>
+                   <h6>No Suprise or hidden fees</h6>
+                <a href="#">Learn More</a></div></span></div>
+                <div class="col"><div class="heading"><span class="border border-1"><ion-icon name="chatbubbles-outline"></ion-icon>
+                  <h6>24/7 Global Customer Support</h6>
+                <p>Get helpful, real human answers from our dedicated support teams wherever you are.</p></span></div></div>
+                <div class="col"><div class="heading"><span class="border border-1"><ion-icon name="cash-outline"></ion-icon>
+                <h6> 60-Day Money Back Gaurantee</h6>
+              <p>If you are not satisfied for any reason, You"ll get a full refund, minus state and third party fees,within 60 days of purchase.</p></span></div></div>
+              </div>
+            </div>
+
+            <div class="container ">
+              <div class="heading">  <p>Faqs</p>
+             <h4>Frequently Asked Questions</h4><br></div>
+             <div class="list-group  ">
+              <a href="#" class="list-group-item list-group-item-action list-group-item-dark">What is website strategy?</a>
+              <a href="#" class="list-group-item list-group-item-action list-group-item-dark">why do I need a website plan?</a>
+              <a href="#" class="list-group-item list-group-item-action list-group-item-dark">How much do the packages cost?</a>
+              <a href="#" class="list-group-item list-group-item-action list-group-item-dark">What's include in your packages?</a>
+              <a href="#" class="list-group-item list-group-item-action list-group-item-dark">How long does it take to complete a website strategy?</a>
+              <a href="#" class="list-group-item list-group-item-action list-group-item-dark">How can I get started?</a>
+              
+              </div>
+            </div><br></br><br></br>
+             
+            
+            
+            <div class="carousel-container">
+              <div class="container"><h5>Hear What our clients say about us</h5>
+              <div class="inner-carousel">
+                <div class="track">
+                  <div class="card-container" >
+                    <div class="card card1"></div>
+                  </div>
+                  <div class="card-container">
+                    <div class="card card2"></div>
+                  </div>
+                  <div class="card-container">
+                    <div class="card card3"></div>
+                  </div>
+                  <div class="card-container">
+                    <div class="card card4"></div>
+                  </div>
+                  <div class="card-container">
+                    <div class="card card5"></div>
+                  </div>
+                  <div class="card-container">
+                    <div class="card card6"></div>
+                  </div>
+                  <div class="card-container">
+                    <div class="card card7"></div>
+                  </div>
+                  <div class="card-container">
+                    <div class="card card8"></div>
+                  </div>
+                  <div class="card-container">
+                    <div class="card card9"></div>
+                  </div>
+                  <div class="card-container">
+                    <div class="card card10">1</div>
+                  </div>
+                  <div class="card-container">
+                    <div class="card card11">1</div>
+                  </div>
+                  <div class="card-container">
+                    <div class="card card12">12</div>
+                  </div>
+                </div>
+                <div class="nav">
+                  <button class="prev"><i class="fas fa-arrow-left fa-2x"></i></button>
+                  <button class="next"><i class="fas fa-arrow-right fa-2x"></i></button>
+                </div></div>
+              </div>
+                
+              </div><br></br>
+              
+              <div class="container">
+                <div class="heading">    <h2>Our Blog</h2></div><br>
+   <a href="#"><img src="https://neilpatel.com/wp-content/uploads/2021/10/extra-Best-WordPress-Themes-for-Blogs.webp" class="float" alt="Paris" width="304" height="236"> </a>
+   <a href="#"> <img src="https://blog.adpushup.com/blog/wp-content/uploads/2015/07/Most-popular-blogs.jpg" class="float" alt="Paris" width="304" height="236"> </a>
+   <a href="#"> <img src="data:image/jpeg;base64,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" class="float" alt="Paris" width="304" height="236"> </a>
+   <a href="#"> <img src="https://www.wppourlesnuls.com/wp-content/uploads/2016/02/13-Himmelen.jpg" class="float" alt="Paris" width="304" height="236"> </a>
+ </div>
+            </div><br></br><br></br>
+           
+            
+   
+            <div class="container-fluid">
+              <footer>
+                <div class="row">
+                  <div class="col-sm-3 p-3"><a href="# "><p>Logo  Zyntech</p><br></a>
+                  <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+                  <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                  <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                  <a href="#"><ion-icon name="logo-figma"></ion-icon></a></div>
+                  <div class="col-sm-3 p-3"><h4>Company</h4><br>
+                  <p>About Us<br></br>Careers<br></br>Blog<br></br>Pricing</p>
+                  </div>
+                  <div class="col-sm-3 p-3"><h4>Services</h4><p>Web Development<br>Mobile Mraketing<br>Email Marketing<br>Search Engine OPptimization<br>Social Media Marketing<br>PPC Management<br>video Management
+                  <br>Graphic design</p></div>
+                  <div class="col-sm-3 p-3"><h4>Join Our Newsletter</h4><br>
+                    <form class="d-flex">
+                      <input class="form-control me-2" type="text" placeholder="Enter Your Email ......">
+                      <button class="btn btn-primary" type="button">Subscribe</button>
+                    </form>
+                  </div>
+                </div>
+              </footer>
+            </div>
+
+
+            </div>
+           </div>
+          </div>
+
+           <script>
+            const prev = document.querySelector(".prev");
+const next = document.querySelector(".next");
+const carousel = document.querySelector(".carousel-container");
+const track = document.querySelector(".track");
+let width = carousel.offsetWidth;
+let index = 0;
+window.addEventListener("resize", function () {
+  width = carousel.offsetWidth;
+});
+next.addEventListener("click", function (e) {
+  e.preventDefault();
+  index = index + 1;
+  prev.classList.add("show");
+  track.style.transform = "translateX(" + index * -width + "px)";
+  if (track.offsetWidth - index * width < index * width) {
+    next.classList.add("hide");
+  }
+});
+prev.addEventListener("click", function () {
+  index = index - 1;
+  next.classList.remove("hide");
+  if (index === 0) {
+    prev.classList.remove("show");
+  }
+  track.style.transform = "translateX(" + index * -width + "px)";
+});
+           </script>
+
+</body>
+</html>
